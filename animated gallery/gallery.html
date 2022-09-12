@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            height: auto;
+            background-image: url(img/h.jpg);
+            justify-content: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .row{
+            padding: 50px;
+        }
+
+        .col1{
+            width:25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid white;
+            background-color: black;
+            box-shadow: 8px 8px 4px black;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+            opacity: 0.9;
+        }
+
+        .col1 span{
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col1 p{
+            color: white;
+        }
+
+        .col1:hover{
+            transform: rotate(0deg);
+        }
+
+        .col2{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 8px 8px 4px white;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            opacity: 0.9;
+        }
+
+        .col2 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col2:hover{
+            transform: rotate(0deg);
+        }
+
+        .col3{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid white;
+            background-color: black;
+            box-shadow: 8px 8px 4px black;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+            opacity: 0.9;
+        }
+
+        .col3 span{
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col3 p{
+            color: white;
+        }
+
+        .col3:hover{
+            transform: rotate(0deg);
+        }
+
+        .col4{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 8px 8px 4px white;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            opacity: 0.9;
+        }
+
+        .col4 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col4:hover{
+            transform: rotate(0deg);
+        }
+
+        .col5{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid white;
+            background-color: black;
+            box-shadow: 8px 8px 4px black;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+            opacity: 0.9;
+        }
+
+        .col5 span{
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col5 p{
+            color: white;
+        }
+
+        .col5:hover{
+            transform: rotate(0deg);
+        }
+
+        .col6{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 8px 8px 4px white;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            opacity: 0.9;
+        }
+
+        .col6 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col6:hover{
+            transform: rotate(0deg);
+        }
+
+        .col7{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid white;
+            background-color: black;
+            box-shadow: 8px 8px 4px black;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+            opacity: 0.9;
+        }
+
+        .col7 span{
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col7 p{
+            color: white;
+        }
+
+        .col7:hover{
+            transform: rotate(0deg);
+        }
+
+        .col8{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 8px 8px 4px white;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            opacity: 0.9;
+        }
+
+        .col8 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col8:hover{
+            transform: rotate(0deg);
+        }
+
+        .col9{
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid white;
+            background-color: black;
+            box-shadow: 8px 8px 4px black;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+            opacity: 0.9;
+        }
+
+        .col9 span{
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col9 p{
+            color: white;
+        }
+
+        .col9:hover{
+            transform: rotate(0deg);
+        }
+
+        .col10{
+            width: 25%;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 8px 8px 4px white;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+            opacity: 0.9;
+        }
+
+        .col10 span{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col10:hover{
+            transform: rotate(0deg);
+        }
+
+        .row:after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px){
+            .col1{
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+            }
+            .col3{
+                width: 100%;
+            }
+            .col4{
+                width: 100%;
+            }
+            .col5{
+                width: 100%;
+            }
+            .col6{
+                width: 100%;
+            }
+            .col7{
+                width: 100%;
+            }
+            .col8{
+                width: 100%;
+            }
+            .col9{
+                width: 100%;
+            }
+            .col10{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col1">
+            <img src="img/7.jpg" width="100%">
+            <span>Sailor Moon</span>
+            <p class="desc1">
+                A trouble-prone schoolgirl receives the ability to transform into a powerful heroine and assembles a team of friends and allies to battle the forces of evil that threaten the world.
+            </p>
+        </div>
+
+        <div class="col2">
+            <img src="img/8.jpg" width="100%">
+            <span>Monkey D. Luffy</span>
+            <p class="desc2">
+                Monkey D. Luffy, also known as "Straw Hat" Luffy, is a fictional character and the main protagonist of the One Piece manga series, 
+            </p>
+        </div>
+
+        <div class="col3">
+            <img src="img/6.jpg" width="100%">
+            <span>Son Goku</span>
+            <p class="desc5">
+                Son Goku is a fictional character and the main protagonist of the Dragon Ball manga series created by Akira Toriyama.
+            </p>
+        </div>
+
+        <div class="col4">
+            <img src="img/5.jpg" width="100%">
+            <span>Silver Rayleigh</span>
+            <p class="desc6">
+                Silvers Rayleigh  also known as the "Dark King" is an extremely powerful and famous retired pirate who formerly served as the first mate of the legendary Roger Pirates, being known as the "Right Hand of the Pirate King
+            </p>
+        </div>
+
+        <div class="col5">
+            <img src="img/4.jpg" width="100%">
+            <span>Uta</span>
+            <p class="desc7">
+                Uta is a world-famous diva and the daughter of Red-Haired Shanks,formerly being a musician in his crew, the Red Hair Pirates, until he left her while she was still a child. She is the main antagonist of One Piece
+            </p>
+        </div>
+
+        <div class="col6">
+            <img src="img/3.jpg" width="100%">
+            <span>Kakashi Hatake</span>
+            <p class="desc8">
+                Kakashi Hatake is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. In the story, Kakashi is the teacher of Team 7, consisting of the series' primary characters, Naruto Uzumaki, Sasuke Uchiha, and Sakura Haruno
+            </p>
+        </div>
+
+        <div class="col7">
+            <img src="img/2.jpg" width="100%">
+            <span>Inosuke</span>
+            <p class="desc9">
+                Inosuke is a member of the Demon Slayer Corps who makes use of his self-made sword style Beast Breathing. He is a travelling companion of the series' main protagonist Tanjiro Kamado. His arch-nemesis was Doma, a powerful demon and member of the Twelve Kizuki who held the position of Upper Two.
+            </p>
+        </div>
+
+        <div class="col8">
+            <img src="img/1.jpg" width="100%">
+            <span>Sakura Haruno</span>
+            <p class="desc10">
+                Sakura Haruno is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. Sakura is depicted as a kunoichi affiliated with Konohagakure and a part of Team 7, which consists of herself, Naruto Uzumaki, Sasuke Uchiha, and their sensei Kakashi Hatake. 
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
